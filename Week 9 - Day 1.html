@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+    var Vehicle = function(type, make, color, year) {
+        this.type = type;
+        this.make = make;
+        this.color = color;
+        this.year = year;
+    }
+    var car1 = new Vehicle("truck", "ford", "black", 1892)
+    var car2 = new Vehicle("jeep", "wrangler", "red", 1941)
+    var car3 = new Vehicle("schoolbus", "ford", "yellow", 1827)
+    var car4 = new Vehicle("plane", "airbus", "white", 1970)
+
+    var Vehicle = [truck, jeep, schoolbus, plane]; 
+
+    for (i = 0; i < Vehicle.length; i++) {
+        console.log(Vehicle[i]);
+
+        if (Vehicle == car1)
+            console.log("I found a ford truck that can go 300 mph");
+
+        else if (Vehicle == car2)
+            console.log("I found a wrangler jeep that can go 350 mph");
+
+        else if (Vehicle == car3)
+            console.log("I found a big bus that can go 150 mph");
+
+        else if (Vehicle == car4)
+            console.log("I found a normal plane that can go 750 mph");
+    }
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

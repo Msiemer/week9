@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+	    var Skyscrapers = function(myNumberOfFloors, myHasValet, myMaterialType) {
+        this.numberOfFloors = myNumberOfFloors;
+        this.hasValet = myHasValet;
+        this.materialType = myMaterialType;
+    }
+
+    var skyScrapers1 = new Skyscrapers(20, true, "steel");
+    var skyScrapers2 = new Skyscrapers(100, false, "wood");
+    var skyScrapers3 = new Skyscrapers(1000, true, "death");
+
+  var demolishSkyscrapersThatHaveAValet = function(skyScrapers){
+        for (var i = 0; i < skyScrapers.length; i++){
+            var skyScrapers = skyScrapers[i];
+            if (skyScraper.hasValet){
+                console.log("Demolish bilding" + skyScraper.numberOfFloors + " floors.");
+            }
+        }
+    }
+
+    var mySkyScrapers = [skyScrapers1, skyScrapers2, skyScrapers3];
+
+    demolishSkyscrapersThatHaveAValet(mySkyScrapers);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
