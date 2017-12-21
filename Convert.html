@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+    function aT(amount, coins) {
+        if (amount === 0) {
+            return [];
+        } else {
+            if (amount >= coins[0]) {
+                left = (amount - coins[0]);
+                return [coins[0]].concat(aT(left, coins));
+            } else {
+                coins.shift();
+                return aT(amount, coins);
+            }
+        }
+    }
+    console.log(aT(46, [25, 10, 1]));
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
